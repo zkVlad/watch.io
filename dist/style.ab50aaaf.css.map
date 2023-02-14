@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets/css/style.scss"],"names":[],"mappings":"AACA,KACI,qBAAA,CACA","file":"style.ab50aaaf.css","sourceRoot":"..","sourcesContent":["/* TODO */\nbody {\n    background-color: pink;\n    font-family: 'Courier New', Courier, monospace;\n}"]}

@@ -1,0 +1,44 @@
+// Création d'un bouton général puis variations
+.bouton {
+    color: $texte;
+    padding: 0.75em 1.5em;
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    background: $degrade-horizontal;
+    font-weight: 300;
+    &--ghost {
+        background: $ghost-border;
+        color: $texte-disabled;
+        cursor: default;
+    }
+    &--behind {
+        background: $fond-3;
+        color: $texte;
+        &:hover {
+            background: lighten($fond-3, $amount: 5);
+        }
+    }
+}
+
+// Modifications des boutons de Swal pour les faire coller au thème, je n'ai pas eu le temps de faire plus propre
+.swal2-actions .swal2-styled[type="button"] {
+    color: $texte;
+    padding: 0.75em 1.5em;
+    box-shadow: none;
+    font-weight: 300;
+    border-radius: 100px;
+    border: none;
+    &.swal2-confirm {
+        background: $degrade-horizontal;
+        &:hover {
+            background-image: $degrade-horizontal;
+        }
+    }
+    &.swal2-cancel {
+        background: $fond-3;
+        &:hover {
+            background: lighten($fond-3, $amount: 5);
+        }
+    }
+}

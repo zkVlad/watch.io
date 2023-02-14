@@ -1,0 +1,18 @@
+// Header
+.header {
+    height: 100px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $ghost-border;
+    padding: 1em;
+    &__logo {
+        max-height: 27px;
+    }
+    @media (max-width: 576px) {
+        flex-direction: column;
+        // align-items: flex-start;
+        height: fit-content;
+        padding: 1em 0;
+    }
+}

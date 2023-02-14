@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recherche | Watch.io</title>
+    <link rel="stylesheet" href="/style.91c3ac3b.css">
+    <link rel="shortcut icon" href="/Favicon.9f2be874.png" type="image/x-icon">
+</head>
+<body>
+  <header class="header">
+    <div>
+        <img class="header__logo" src="/Logo-Watch-Io.d3d19bd0.png" alt="Logo Watch.io">
+    </div>
+    <nav class="menu-principal">
+        <ul class="menu-principal__liens">
+            <li class="lien-navigation">
+                <a class="lien-navigation__a" href="/index.html">Ma Watchlist</a>
+            </li>
+            <li class="lien-navigation">
+                <a href="/recherche.html" class="bouton bouton--behind lien-navigation__a">Rechercher</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+    
+    <main>
+        <section id="container">
+
+            <h1>Rechercher Un Film</h1>
+            <p class="sous-titre">Découvrez de nouvelles idées de films à regarder ou à ajouter à votre watchlist.</p>
+                <form action="#" class="formulaire-de-recherce">
+                    <div class="search-box">
+                        <input class="search-form-input left-form-input" type="search" name="titre" placeholder="Titre">
+                        <input class="search-form-input middle-form-input" type="number" name="annee" placeholder="Année">
+                        
+                        <details id="dropdown" class="dropdown">
+                          <summary class="dropdown-button">
+                            <span id="selected-item" class="selected-item">Type</span>
+                          </summary>
+                          <details-menu class="dropdown-menu">
+                            <div class="dropdown-menu-header">Type de contenu recherché</div>
+                            <div class="dropdown-menu-list">
+                              <label class="dropdown-menu-item">
+                                <input type="radio" name="item" data-requete="movie" value="Films">
+                                <span>Films</span>
+                              </label>
+                              <label class="dropdown-menu-item">
+                                <input type="radio" name="item" data-requete="series" value="Séries">
+                                <span>Séries</span>
+                              </label>
+                              <label class="dropdown-menu-item">
+                                <input type="radio" name="item" data-requete="game" value="Jeux">
+                                <span>Jeux</span>
+                              </label>
+                              <label class="dropdown-menu-item">
+                                <input type="radio" name="item" data-requete="episode" value="Épisode">
+                                <span>Épisode</span>
+                              </label>
+                            </div>
+                          </details-menu>
+                        </details>
+
+                        <button class="bouton submit-formulaire" type="submit">Rechercher</button>
+                      </div>
+                </form>
+
+        </section>
+        <section class="resultats-recherche">
+            <div id="presentation-resultats" class="presentation-resultats"></div>
+            <ul id="resultats-recherche" class="affichage-resultats"></ul>
+            <div id="zone-pagination"></div>
+        </section>
+    </main>
+
+<script src="/recherche.d94ce7eb.js"></script>
+</body>
+</html>

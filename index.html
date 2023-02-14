@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Watchlist | Screen.io</title>
+    <link rel="stylesheet" href="./assets/css/style.scss">
+    <link rel="shortcut icon" href="./assets/img/Favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img class="header__logo" src="./assets/img/Logo-Watch-Io.png" alt="Logo Watch.io">
+        </div>
+        <nav class="menu-principal">
+            <ul class="menu-principal__liens">
+                <li class="lien-navigation">
+                    <a class="lien-navigation__a" href="./index.html">Ma Watchlist</a>
+                </li>
+                <li class="lien-navigation">
+                    <a href="./recherche.html" class="bouton bouton--behind lien-navigation__a">Rechercher</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h1>Votre watchlist</h1>
+            <p>Consultez la liste des films que vous souhaitez regardez ou ajoutez en de nouveaux.</p>
+        </section>
+        <section class="gestion-tableau">
+            <article>
+                <select name="choix-filtres" id="choix-filtres" class="choix-filtres">
+                    <option disabled selected>Trier par</option>
+                    <option data-methode-tri="asc" data-bouton-vise="name">Titre (Ordre Ascendant)</option>
+                    <option data-methode-tri="desc" data-bouton-vise="name">Titre (Ordre Descendant)</option>
+                    <option data-methode-tri="asc" data-bouton-vise="years">Année (Ordre Ascendant)</option>
+                    <option data-methode-tri="desc" data-bouton-vise="years">Année (Ordre Descendant)</option>
+                    <option data-methode-tri="asc" data-bouton-vise="authors">Réalisateur (Ordre Ascendant)</option>
+                    <option data-methode-tri="desc" data-bouton-vise="authors">Réalisateur (Ordre Descendant)</option>
+                </select>
+            </article>
+            <article class="ajout-film">
+                <button class="bouton" id="bouton-ajout-film">
+                    Ajouter un film à votre liste
+                </button>
+            </article>
+        </section>
+        <section class="table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>
+                            <button id="name">Titre</button>
+                        </th>
+                        <th>
+                            <button id="years">Année</button>
+                        </th>
+                        <th>
+                            <button id="authors">Réalisateur</button>
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="table-content"></tbody>
+            </table>
+        </section>
+    </main>
+
+<script src="./assets/js/index.js"></script>
+</body>
+</html>

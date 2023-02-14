@@ -1,0 +1,21 @@
+{
+  "name": "ecf_bourguin_vladimir",
+  "version": "1.0.0",
+  "description": "Exercice ECF - Bourguin Vladimir",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel ./index.html ./recherche.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.11",
+    "parcel-bundler": "^1.12.5",
+    "postcss": "^8.4.21",
+    "sass": "^1.58.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "sweetalert2": "^11.7.1"
+  }
+}

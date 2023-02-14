@@ -1,0 +1,15 @@
+// Couleurs
+$fond: #0D0E12;
+$fond-2: #16191F;
+$fond-3: #22262F;
+$fond-4: #86898F;
+$shadow-border: fade-out($fond, .9);
+$texte: #FFFFFF;
+$texte-retrait: fade-out($texte, .3);
+$texte-disabled: fade-out($texte, .6);
+$ghost-border: fade-out($texte, .95);
+$degrade-horizontal: linear-gradient(to right, #0B63F6, #590FB7);
+$degrade-horizontal-warning: linear-gradient(to right, #F14658, #DC2537);
+$primary-color: #0B63F6;
+$red: #F14658;
+$light-red: fade-out(red, .9);

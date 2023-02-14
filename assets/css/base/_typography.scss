@@ -1,0 +1,48 @@
+// Import de la police 'Avenir'
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirLTStd-Book.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirLTStd-Light.woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirLTStd-Medium.woff2');
+    font-weight: 500;
+}
+
+// Règles typographiques générales
+body {
+    background-color: $fond;
+    font-family: 'Avenir', 'Open Sans', Arial, sans-serif;
+    font-size: 18px;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+    @media (max-width: 576px) {
+        font-size: 14px;
+    }
+}
+
+h1 {
+    color: $texte;
+    font-weight: 300;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: $texte;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+p {
+    color: $texte-retrait;
+    line-height: 1.4em;
+}
